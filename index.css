@@ -571,8 +571,8 @@ overflow: hidden;
 @media screen and (max-width:701px) {
     .home {
         flex-direction: column;
-        min-height: 100vh;
-        padding-top: 90px;
+        height: 100vh;
+        padding-top: 100px;
     }
 
     .hrigthtbox,
