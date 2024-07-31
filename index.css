@@ -572,7 +572,7 @@ overflow: hidden;
     .home {
         flex-direction: column;
         height: 100vh;
-        padding-top: 90px;
+        padding-top: 0px;
     }
 
     .hrigthtbox,
