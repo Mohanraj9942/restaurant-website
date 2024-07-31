@@ -1,0 +1,22 @@
+
+
+
+.southfoodtop1{
+   
+    background: linear-gradient(45deg,rgb(255, 0, 76) 48%,white 45%);
+background-attachment: fixed;
+}
+
+.orderoverall .dish::before{
+    background:linear-gradient(to right, rgb(64, 10, 78),rgb(145, 60, 241));
+
+}
+.orderoverall.dish{
+    background: linear-gradient(345deg,rgb(208, 207, 255) 65%,white 35%);
+
+}
+
+.orderoverall  .placeorder{
+    background:linear-gradient(to right, rgb(27, 161, 0),rgb(8, 228, 0));
+
+}

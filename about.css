@@ -1,0 +1,55 @@
+.aboutoverall {
+    box-shadow: var(--sdhalite);
+    border-radius: 0 0 10px 10px;
+}
+
+.aboutbox1 {
+    width: 100%;
+
+
+    border-radius: 10px;
+    padding-top: 130px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.abouttopbox {
+    height: 400px;
+    padding: 0 10px;
+}
+
+.abouttopbox img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* object-position: bottom; */
+    border-radius: 10px;
+
+}
+
+.aboutbottombox {
+    width: 85%;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.aboutbottombox p:nth-child(2) {
+    margin-top: 30px;
+}
+
+.aboutbottombox p {
+    line-height: 27px;
+    text-align: justify;
+}
+
+@media screen and (max-width:630px) {
+    .aboutbottombox {
+        width: 95%;
+        background-color: antiquewhite;
+        padding: 20px;
+    }
+}

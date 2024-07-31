@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.orderbox2 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(42deg, orange 48%, rgb(239, 239, 239) 48%);
+}
+
+.popup {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* top: -300px; */
+    /* left: 50%; */
+    left: 0;
+    top: -120%;
+    /* transform: translate(-50%, -50%); */
+    transition: 1.5s;
+    flex-direction: column;
+    gap: 10px;
+    height: 50vh;
+    z-index: 23;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation-delay: 0.9s;
+}
+
+#order:checked~.popup {
+    /* top: 170px; */
+
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.orderbox2 input {
+    display: none;
+}
+
+.orderbox2 {
+    /* height:100vh; */
+}
+
+.done {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 10px 45px;
+    background-color: rgb(255, 2, 57);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+
+}
+
+.popsize {
+    font-size: 170px;
+    color: rgb(0, 255, 0);
+}
+
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 93vh;
+
+}
+
+.bg {
+    margin-top: 180px;
+    width: 350px;
+    background-color: white;
+    box-shadow: var(--sdhalite);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 20;
+}
+
+.center h2 {
+    text-align: center;
+}
+
+.popup h3,
+.popup h4 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.okbtn {
+
+    height: 35px;
+    width: 100px;
+    background-color: rgb(46, 196, 0);
+    border-radius: 5px;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.okbtn:hover,
+.cancelbtn:hover,
+.gohome:hover,
+.done:hover {
+
+    background-color: black;
+    transition: 0.30s;
+
+}
+
+.cancelbtn {
+    height: 35px;
+    width: 100px;
+    background-color: rgb(255, 0, 34);
+    border-radius: 5px;
+
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cancelbtn a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.food1 label {
+    color: white;
+}
+
+.done a {
+    text-decoration: none;
+    color: white;
+}
+
+.chef {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.chef img {
+    width: 550px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+
+}
+
+.gohome {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(61, 0, 61);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.gohome a {
+    color: white;
+    text-decoration: none;
+}
+
+.orimg img {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border-radius: 50%;
+    animation-name: chicken;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: 1s;
+    object-fit: cover;
+}
+
+@keyframes chicken {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .popsize {
+        font-size: 100px;
+        color: rgb(0, 255, 0);
+    }
+
+    .popup h3,
+    .popup h4 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #order:checked~.popup {
+        top: 0px;
+
+    }
+
+    .bg {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .bg {
+        width: 250px;
+    }
+
+    .bg h2 {
+        font-size: 22px;
+    }
+
+    .con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+
+    }
+
+    .gohome {
+        width: 150px;
+        height: 40px;
+        background-color: rgb(61, 0, 61);
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .orprocess {
+        font-size: 17px;
+    }
+
+    .loadvideo img {
+        width: 50%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .orimg img {
+        /* border-radius: 0 0  0 200%; */
+        width: 250px;
+        height: 250px;
+        right: 10%;
+
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .orimg img {
+        width: 250px;
+        height: 250px;
+        right: 10%;
+
+    }
+
+    .chef img {
+        width: 450px;
+
+    }
+
+    .chef {
+        left: -100px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .orimg img {
+        width: 250px;
+        height: 250px;
+        right: -110px;
+        top: 50px;
+
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1000px) {
+    .orimg img {
+
+        right: 10px;
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .chef {
+        left: -100px;
+    }
+
+}

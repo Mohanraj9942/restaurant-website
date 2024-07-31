@@ -1,0 +1,169 @@
+body {
+    padding: 0;
+}
+
+
+.upcommingfood {
+    overflow: hidden;
+    box-shadow: var(--sdhalite);
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+    background-image: url("./img/mm.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.commingfood .food1 {
+    width: 400px;
+    background-color: rgb(255, 117, 5);
+    margin-left: 50px;
+    /* border-radius: 40px 90px 40px 50px; */
+    border-radius: 20px;
+    position: relative;
+    height: 300px;
+    color: black;
+    padding: 15px 10px 10px 20px;
+    right: -300px;
+    animation-name: comming;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: 10s;
+    align-content: center;
+}
+
+@keyframes comming {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 300px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+
+
+.commingfood .food1 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* transform: skewX(20deg); */
+    margin-left: 30px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    margin: 5px;
+
+
+}
+
+.commingfood h2:nth-child(1) {
+    /* color: rgb(255, 100, 10); */
+    font-weight: bold;
+}
+
+.commingfood {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    gap: 40px;
+}
+
+.food1overall {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    transform: skew(10deg);
+    /* box-shadow: var(--sdhalite); */
+    margin: 3px;
+    border: none;
+}
+
+.mobilenewfood {
+    display: none;
+}
+
+@media screen and (max-width:650px) {
+    .upcommingfood {
+        display: none;
+    }
+
+    .mobilenewfood {
+        display: block;
+        width: 100%;
+        padding-top:100px;
+        /* gap:10px; */
+    }
+   body{
+padding:0 10px;
+   }
+    .mobilenewfood h2 {
+        text-align: center;
+    }
+
+    .mobfood1 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        /* background-color: rgb(114, 90, 90); */
+    }
+
+    .mobilenewfood img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .mf1 {
+        background-color: rgb(255, 136, 0);
+        width: 100%;
+        padding: 15px 10px;
+        border-radius: 20px;
+    }
+    .mobfont{
+        margin-top: 40px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width:1335px) {
+    .commingfood .food1 {
+        /* animation: none; */
+        left: -50px;
+
+
+
+
+
+
+    }
+    .commingfood h1 {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+
+}
+
+@media screen and (min-width:650px) and (max-width:830px) {
+    .food1 h2 {
+        margin-top: 170px;
+        font-size: 20px;
+    }
+
+
+}

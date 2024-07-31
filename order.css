@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CL:wght@100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+
+}
+
+:root {
+    --sdhalite: 0 0 10px rgba(0, 0, 0, 0.3);
+    --insha: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3)inset;
+    --deepp: rgb(255, 0, 55);
+    --font15: 15px;
+    --font16: 16px;
+    --font17: 20px;
+}
+
+
+
+
+
+.ordervideo {
+
+    min-height: 100vh;
+    padding: 100px 10px 10px 10px;
+    box-shadow: var(--sdhalite);
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.orpo1 {
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    width: 250px;
+    height: 560px;
+    border-radius: 10px;
+    transform: skew(-5deg);
+    box-shadow: var(--sdhalite);
+    object-fit: cover;
+}
+
+.orpo2 {
+    position: absolute;
+    transform: skew(-5deg);
+    box-shadow: var(--sdhalite);
+
+    object-fit: cover;
+    left: 310px;
+    bottom: 10px;
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+.orpo3 {
+    position: absolute;
+    left: 565px;
+    /* top:220px; */
+    bottom: 10px;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    transform: skew(-5deg);
+    box-shadow: var(--sdhalite);
+}
+
+.text1 {
+    position: absolute;
+    bottom: 30px;
+    right: 140px;
+    color: deeppink;
+
+}
+
+.text2 {
+    position: absolute;
+    top: 150px;
+    right: 80px;
+    color: rgb(255, 123, 0);
+}
+
+.text1 h2,
+.text2 h2 {
+    font-family: "Salsa", Sans-serif;
+    font-weight: 600;
+    font-size: 25px
+}
+
+.orvideoleft {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.orvideoleft img {
+    width: 40%;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:750px) {
+
+    .orvideoleft {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .orvideoleft img {
+        width: 300px;
+        margin-top: 70px;
+        height: 200px;
+    }
+
+
+    .orpo1 {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        width: 100px;
+        height: 160px;
+        border-radius: 10px;
+        transform: skew(-5deg);
+        box-shadow: var(--sdhalite);
+        object-fit: cover;
+    }
+
+    .orpo2 {
+
+        left: 120px;
+        bottom: 10px;
+        width: 100px;
+        height: 130px;
+        /* display: none; */
+    }
+
+
+    .orpo3 {
+
+        left: 230px;
+        /* top:220px; */
+        bottom: 10px;
+        width: 60px;
+        height: 90px;
+        /* display: none; */
+    }
+
+    .text1 {
+        top: 110px;
+        left: 30px;
+        width: 80%;
+
+
+    }
+
+    .text2 {
+        top: 140px;
+        left: 30px;
+        width: 80%;
+    }
+
+    .text1 h2,
+    .text2 h2 {
+        font-family: "Salsa", Sans-serif;
+        font-weight: 600;
+        font-size: 15px
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:500px) {
+
+
+
+
+
+    .orpo1 {
+        left: 10px;
+        bottom: 10px;
+        width: 120px;
+        height: 160px;
+
+    }
+
+    .orpo2 {
+
+        left: 140px;
+        bottom: 10px;
+        width: 120px;
+        height: 130px;
+        /* display: none; */
+    }
+
+
+    .orpo3 {
+
+        left: 270px;
+        /* top:220px; */
+        bottom: 10px;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
+
+
+
+
+
+    .orpo1 {
+        left: 10px;
+        bottom: 10px;
+        width: 140px;
+        height: 190px;
+
+    }
+
+    .orpo2 {
+
+        left: 160px;
+        bottom: 10px;
+        width: 140px;
+        height: 150px;
+        /* display: none; */
+    }
+
+
+    .orpo3 {
+
+        left: 310px;
+        /* top:220px; */
+        bottom: 10px;
+        width: 110px;
+        height: 120px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:950px) {
+
+    .text1 {
+        top: 110px;
+        left: 10%;
+        width: 80%;
+
+
+    }
+
+    .text2 {
+        top: 140px;
+        left: 10%;
+        width: 80%;
+    }
+
+    .text1 h2,
+    .text2 h2 {
+        font-family: "Salsa", Sans-serif;
+        font-weight: 600;
+        font-size: 20px
+    }
+
+
+
+    .orpo1 {
+        left: 6%;
+        /* transform:translate(-300% , -10px); */
+        bottom: 10px;
+        width: 26%;
+        height: 220px;
+
+    }
+
+    .orpo2 {
+
+        left: 38%;
+        bottom: 10px;
+        width: 25%;
+        height: 170px;
+        /* display: none; */
+    }
+
+
+    .orpo3 {
+
+        left: 70%;
+        /* top:220px; */
+        bottom: 10px;
+        width: 25%;
+        height: 140px;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:950px) {
+    .orpo1 {
+        left: 50px;
+        bottom: 10px;
+        width: 200px;
+        height: 450px;
+
+    }
+
+    .text1 h2 {
+        left: 300px;
+        position: absolute;
+    }
+
+    .text2 h2 {
+        left: 230px;
+        position: absolute;
+    }
+
+    .orpo2 {
+
+        left: 260px;
+        bottom: 10px;
+        width: 200px;
+        height: 350px;
+        /* display: none; */
+    }
+
+
+    .orpo3 {
+
+        left: 470px;
+        /* top:220px; */
+        bottom: 10px;
+        width: 110px;
+        height: 120px;
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:950px) and (max-width:1300px) {
+    .orpo1 {
+        left: 50px;
+        bottom: 10px;
+        width: 200px;
+        height: 450px;
+
+    }
+
+    .orvideoleft img {
+        width: 35%;
+        margin-top: 100px;
+    }
+
+    .orpo2 {
+
+        left: 260px;
+        bottom: 10px;
+        width: 200px;
+        height: 350px;
+        /* display: none; */
+    }
+
+
+    .orpo3 {
+
+        left: 470px;
+        /* top:220px; */
+        bottom: 10px;
+        width: 150px;
+        height: 220px;
+    }
+
+    .text1 {
+        right: 50px;
+
+    }
+
+    .text2 {
+        right: 50px;
+
+    }
+
+}
+
+/* -----------------loader style----------- */
+.overallnav,
+.orderoveralll,
+.loader {
+    animation-name: navwait;
+    animation-duration: 3.5s;
+
+
+
+}
+
+@keyframes navwait {
+    0% {
+        opacity: 0;
+        display: none;
+
+    }
+
+    50% {
+        opacity: 0;
+        display: none;
+    }
+
+    85% {
+        opacity: 0;
+        display: none;
+    }
+
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.loadvideo {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: white;
+
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .loadvideo img {
+        width: 90%;
+    }
+
+
+}
+
+
+
+body {
+    padding: 0 10px 10px 10px;
+}
+
+/* ----------order styles------------------- */
+
+.orderoveralll {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    box-shadow: var(--sdhalite);
+    border-radius: 10px;
+}
+
+.orderoveralll h2 {
+    text-align: center;
+
+}
+
+.orderoverall {
+    padding: 0 15px;
+}
+
+.orderoverall h5 {
+    color: rgb(114, 112, 112);
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+.orderoverall h3 {
+    font-size: var(--font17);
+    font-weight: 600;
+    margin-top: 10px;
+    color: rgb(31, 31, 31);
+
+}
+
+.orderbox1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.orderbox1 .dish {
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255);
+    width: 270px;
+    min-height: 300px;
+    box-shadow: var(--sdhalite);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(345deg, rgb(255, 230, 238) 65%, white 35%);
+
+
+}
+
+.orderbox1 .dish::before {
+    content: "50% Offer";
+    background: linear-gradient(to right, rgb(255, 0, 55), rgb(255, 83, 120));
+    padding: 5px 50px;
+    color: white;
+    position: absolute;
+    transform: rotate(310deg);
+    left: -55px;
+    top: 25px;
+}
+
+.orderbox1 img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border:5px solid white; */
+    align-self: center;
+    animation-name: orderfood;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation-iteration-count: infinite;
+    /* background-color: rgb(255, 255, 255); */
+    border: 2px solid white;
+
+}
+
+
+@keyframes orderfood {
+    0% {}
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {}
+}
+
+
+.orderbox1 p {
+    font-size: var(--font15);
+    margin: 10px 0;
+    line-height: 25px;
+    color: rgb(83, 83, 83);
+}
+
+.placeorder a {
+    text-decoration: none;
+    color: white;
+    font-size: var(--font15);
+    letter-spacing: 0.5px;
+}
+
+.price {
+    background-color: rgb(255, 126, 147);
+    padding: 2px 8px;
+    font-size: 17px;
+    color: black;
+    /* border-radius: 5px 5px 10px 2px; */
+    border-radius: 5px;
+    font-weight: bold;
+    animation-name: price;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: 0.30s;
+}
+
+@keyframes price {
+    10% {
+        background-color: rgb(13, 110, 0);
+    }
+
+    50% {
+        background-color: orange;
+    }
+}
+
+.placeorder {
+    width: 150px;
+    height: 40px;
+    padding: 5px 10px;
+    /* background-color:var(--deepp); */
+    background: linear-gradient(to right, rgb(255, 0, 55), rgb(255, 56, 82));
+
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: placeorder;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: 0.30s;
+    cursor: pointer;
+}
+
+@keyframes placeorder {
+    10% {
+        transform: scaleX(1);
+        background-color: rgb(255, 12, 64);
+    }
+
+    50% {
+        transform: scaleX(1.100);
+        background-color: orange;
+    }
+}
+
+.veg h2,
+.nonveg h2 {
+    margin-bottom: 20px;
+}
+
+/* ----------------veg food style----------- */
+
+.veg {
+    margin-top: 25px;
+    padding: 20px 0px;
+}
+
+.vegallbox .dish::before {
+
+    background: linear-gradient(to right, rgb(15, 128, 0), rgb(60, 255, 0));
+}
+
+.vegallbox .dish {
+    background: linear-gradient(345deg, rgb(213, 250, 208) 65%, white 35%);
+
+}
+
+.vegallbox .placeorder {
+    background: linear-gradient(to right, rgb(15, 128, 0), rgb(55, 230, 2));
+
+}
+
+/* ------------sweets style------------ */
+
+.sweet h2 {
+    margin-bottom: 15px;
+
+}
+
+.sweet {
+    margin-top: 25px;
+    padding: 20px 0px;
+}
+
+.sweetallbox .dish::before {
+    background: linear-gradient(to right, rgb(219, 62, 0), rgb(255, 117, 53));
+
+}
+
+.sweetallbox .dish {
+    background: linear-gradient(345deg, rgb(255, 226, 207) 65%, white 35%);
+
+}
+
+.sweetallbox .placeorder {
+    background: linear-gradient(to right, rgb(219, 62, 0), rgb(253, 112, 46));
+
+}
+
+
+/* ---------------soft drinks style-------------- */
+.drink h2 {
+    margin-bottom: 15px;
+}
+
+.drink {
+    margin-top: 25px;
+    padding: 20px 0px;
+}
+
+.drinkallbox .dish::before {
+    background: linear-gradient(to right, rgb(16, 2, 211), rgb(61, 80, 255));
+
+}
+
+.drinkallbox .dish {
+    background: linear-gradient(345deg, rgb(208, 207, 255) 65%, white 35%);
+
+}
+
+.drinkallbox .placeorder {
+    background: linear-gradient(to right, rgb(0, 33, 219), rgb(49, 46, 253));
+
+}

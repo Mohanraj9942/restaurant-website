@@ -1,0 +1,171 @@
+body {
+    /* padding:0; */
+
+}
+
+
+
+.southfoodtop1 {
+    height: 100vh;
+    background: linear-gradient(45deg, orange 48%, white 45%);
+    box-shadow: var(--sdhalite);
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-attachment: fixed;
+
+
+}
+
+.southfoodtop1 h1 {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.southfood1 {
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.southfood1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: var(--sdhalite);
+
+
+}
+
+
+.southposition {
+
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+
+
+}
+
+.southposition img {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+}
+
+.southposition .bigfood {
+    width: 350px;
+    height: 350px;
+
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    .southposition img:nth-child(1) {
+        display: none;
+    }
+
+    .southposition img:nth-child(2) {
+        display: none;
+    }
+
+    .southfoodtop1 h1 {
+        font-size: 23px;
+    }
+
+
+
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+
+    .southposition img {
+        width: 150px;
+        height: 150px;
+        background-color: white;
+    }
+
+    .southposition .bigfood {
+        width: 230px;
+        height: 230px;
+
+
+    }
+
+
+
+}
+
+@media screen and (min-width:800px) and (max-width:1000px) {
+
+    .southposition img {
+        width: 150px;
+        height: 150px;
+        background-color: white;
+    }
+
+    .southposition .bigfood {
+        width: 250px;
+        height: 250px;
+
+        margin-top: 0px;
+    }
+
+
+
+}
+
+@media screen and (min-width:800px) and (max-width:1100px) {
+    .southposition img {
+        width: 170px;
+        height: 170px;
+        background-color: white;
+    }
+
+    .southposition .bigfood {
+        width: 260px;
+        height: 260px;
+
+        margin-top: 0px;
+    }
+
+}
+
+.southposition div {
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 10px solid white;
+    background-color: white;
+}
+
+.southposition .bigfood {
+    animation-name: south;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    border: none;
+}
+
+@keyframes south {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

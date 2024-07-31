@@ -1,0 +1,134 @@
+
+
+.servicealll{
+    padding:150px 0 0 0;
+}
+
+.serviceall article{
+    display: flex;
+    gap:10px;
+    border-radius: 10px;
+    box-shadow: var(--sdhalite);
+    margin-top: 20px;
+}
+
+.serteftbox1,.serrightbox1{
+    width:50%;
+    /* background-color: aqua; */
+   
+   
+
+}
+
+
+.serviceall{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+
+.serteftbox1{
+   height:450px;
+   padding: 15px;
+}
+.serteftbox1 img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: top;
+   
+
+}
+.servicealll h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.serrightbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.catvideo {
+    display: flex;
+    flex-wrap: wrap;
+   gap:20px;
+   justify-content: center;
+   background-color: rgb(227, 255, 246);
+   border-radius: 10px;
+   padding: 20px 10px;
+}
+.catvideo div{
+    width:35%;
+    height:350px;
+    /* padding: 20px; */
+    border: 10px solid rgb(19, 19, 19);
+    box-shadow: var(--sdhalite);
+    border-radius: 1px;
+}
+
+.catvideo img, .catvideo video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+@media screen  and (max-width:700px){
+    .catvideo div{
+        width:100%;
+        height:300px;
+       
+    }
+    
+}
+@media screen  and (max-width:800px){
+    .serviceall article{
+        display: flex;
+        gap:10px;
+        border-radius: 10px;
+        box-shadow: var(--sdhalite);
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviceall article img{
+        object-fit: contain;
+    }
+
+   .serteftbox1{
+    height: 200px;
+   }
+    .serteftbox1,.serrightbox1{
+        width:100%;
+        /* background-color: aqua; */
+       
+       
+    
+    }
+    
+}
+@media screen  and (min-width:800px) and (max-width:1067px){
+    .serviceall article img{
+        object-fit: contain;
+    }
+
+   .serteftbox1{
+    height: 250px;
+   }
+}
+
+
+@media screen  and (min-width:600px) and (max-width:800px){
+    .catvideo div{
+        width:45%;
+       
+       
+    }
+    
+}
