@@ -583,7 +583,8 @@ overflow: hidden;
 @media screen and (max-width:701px) {
     .home {
         flex-direction: column;
-      background-color: red;
+      background-color: rgb(255, 255, 255);
+      min-height: 80vh;
        
     }
 
