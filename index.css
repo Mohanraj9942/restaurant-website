@@ -573,6 +573,8 @@ overflow: hidden;
         flex-direction: column;
         height: 100vh;
         padding-top: 150px;
+      background-color: rgb(148, 148, 148);
+       
     }
 
     .hrigthtbox,
