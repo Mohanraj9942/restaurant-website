@@ -390,6 +390,9 @@ li:hover a {
 overflow: hidden;
     display: flex;
     width: 100%;
+   padding-top: 17vh;
+   padding-bottom: 20px;
+
     min-height: 100vh;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px 5px 10px 10px;
@@ -565,15 +568,23 @@ overflow: hidden;
         font-size: 15px;
     }
 
+    .mintleef1 {
+        
+        left:10px;
+    }
+    .mintleef2 {
+        
+        right:10px;
+    }
+
 }
 
 /* -----------------home media q styles----------- */
 @media screen and (max-width:701px) {
     .home {
         flex-direction: column;
-        height: 100vh;
-        padding-top: 150px;
-      background-color: rgb(148, 148, 148);
+      background-color: rgb(255, 255, 255);
+      min-height: 80vh;
        
     }
 
@@ -589,18 +600,20 @@ overflow: hidden;
 
     .hrigthtbox {
         padding: 15px;
+        margin-top: 20px;
 
     }
 
     .hleftbox img {
         /* animation: none; */
-        width: 225px;
-        height: 225px;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
     }
 
     .hrigthtbox h1 {
         font-size: 20px;
+       
     }
 
     .hrigthtbox h2 {
@@ -675,7 +688,7 @@ overflow: hidden;
     .hleftbox img {
         width: 420px;
         height: 420px;
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
 
     .hrigthtbox h1 {
@@ -692,7 +705,7 @@ overflow: hidden;
 
 
     .hleftbox {
-        margin-top: 70px;
+        /* margin-top: 70px; */
     }
 
 

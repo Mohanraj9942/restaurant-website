@@ -113,7 +113,10 @@
         justify-content: center;
 
     }
+    .ordervideo {
 
+        min-height: 70vh;
+    }
     .orvideoleft img {
         width: 300px;
         margin-top: 70px;
@@ -185,7 +188,7 @@
         left: 10px;
         bottom: 10px;
         width: 120px;
-        height: 160px;
+        height: 170px;
 
     }
 
@@ -194,18 +197,24 @@
         left: 140px;
         bottom: 10px;
         width: 120px;
-        height: 130px;
+        height: 140px;
         /* display: none; */
     }
-
-
+    .text1 h2,
+    .text2 h2 {
+       
+        font-size: 20px;
+    }
+    .text2 h2 {
+        margin-bottom: 15px;
+    }
     .orpo3 {
 
         left: 270px;
         /* top:220px; */
         bottom: 10px;
         width: 90px;
-        height: 90px;
+        height: 100px;
     }
 }
 

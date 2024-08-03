@@ -6,7 +6,7 @@ body {
 
 
 .southfoodtop1 {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(45deg, orange 48%, white 45%);
     box-shadow: var(--sdhalite);
     border-radius: 0 0 10px 10px;
@@ -24,7 +24,6 @@ body {
 
 .southfood1 {
     width: 100%;
-    height: 100vh;
    
 }
 
@@ -64,7 +63,9 @@ body {
 
 
 }
-
+.orderoveralll {
+    padding-top:20px;
+}
 
 @media screen and (max-width:600px) {
 
@@ -169,3 +170,12 @@ body {
         transform: scale(1);
     }
 }
+
+@media screen and (max-width:840px){
+    .southfoodtop1 {
+    
+    min-height:80vh;
+    }
+}
+
+
